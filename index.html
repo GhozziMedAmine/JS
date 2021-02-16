@@ -3,7 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA_Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
     <title>Dabchy</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
@@ -18,6 +19,107 @@
 
     <script src="./javascript/jquerycdn.js"></script>
     <script src="./javascript/lightslider.js"></script>
+
+
+    <script>
+      var dabchy=  [
+            {
+                id: 1,
+                category: "jeans",
+                name: "Ripped jeans",
+                image: "https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/11.jpg",
+                size: "XL",
+                color: "blue",
+                price: 20.99
+            },
+            {
+                id: 2,
+                category: "jeans",
+                name: "Boyfriend jeans",
+                image: "https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/10.jpg",
+                size: "S",
+                color: "blue",
+                price: 24.99
+            },
+            {
+                id: 3,
+                category: "shirts",
+                name: "Ripped sweatshirt",
+                image: "https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/7.jpg",
+                size: "XL",
+                color: "white",
+                price: 29.99
+            },
+            {
+                id: 4,
+                category: "jackets",
+                name: "Denim Jacket",
+                image: "https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/15.jpg",
+                size: "M",
+                color: "grey",
+                price: 40.99
+            },
+            {
+                id: 5,
+                category: "shirts",
+                name: "Longsleeve",
+                image: "https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/8.jpg",
+                size: "L",
+                color: "black",
+                price: 120.99
+            },
+            {
+                id: 6,
+                category: "jeans",
+                name: "Ripped jeans",
+                image: "https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/11.jpg",
+                size: "XL",
+                color: "blue",
+                price: 20.99
+            },
+            {
+                id: 7,
+                category: "jeans",
+                name: "Boyfriend jeans",
+                image: "https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/10.jpg",
+                size: "S",
+                color: "blue",
+                price: 24.99
+            },
+            {
+                id: 8,
+                category: "shirts",
+                name: "Ripped sweatshirt",
+                image: "https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/7.jpg",
+                size: "XL",
+                color: "white",
+                price: 29.99
+            },
+            {
+                id: 9,
+                category: "jackets",
+                name: "Denim Jacket",
+                image: "https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/15.jpg",
+                size: "M",
+                color: "grey",
+                price: 40.99
+            },
+            {
+                id: 10,
+                category: "shirts",
+                name: "Longsleeve",
+                image: "https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/8.jpg",
+                size: "L",
+                color: "black",
+                price: 120.99
+            }
+        ]
+    </script>
+
+
+
+
+
 </head>
 
 <body>
@@ -36,122 +138,447 @@
 
 
 
+    <section class="slider">
 
+        <ul id="autoWidth" class="cs-hidden">
+            <li class="item-a">
+                <div class="box">
 
-    <ul id="autoWidth" class="cs-hidden">
-        <li class="item-a">
-            <div class="box">
-
-                <div class="slide-img">
-                    <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/11.jpg" alt="">
-                    <div class="overlay">
-                        <a href="#" class="buy-btn"> Ija Echri</a>
+                    <div class="slide-img">
+                        <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/11.jpg" alt="">
+                        <div class="overlay">
+                            <a href="#" class="buy-btn"> Ija Echri</a>
+                        </div>
                     </div>
-                </div>
 
-                <div class="detail-box">
-                    <div class="type">
-                        <a href="">XXXX XXXXX</a>
-                        <span>YYYYY</span>
+                    <div class="detail-box">
+                        <div class="type">
+                            <a href="">
+                            <script>
+                                document.write(dabchy[0].category);
+                                
+                            </script>
+                            </a>
+                            <script>
+                                document.write(dabchy[0].name);
+                                
+                            </script>
+                            </a>
+                            <span>
+                                <script> 
+                                document.write(dabchy[0].size);
+                                </script>
+                                <script> 
+                                document.write(dabchy[0].color);
+                                </script>
+                            </span>
+                        </div>
+                        <a href="#" class="price">
+                            <script> 
+                                document.write(dabchy[0].price);
+                                </script>
+                                TND
+                        </a>
+
                     </div>
-                    <a href="#" class="price">23$</a>
-
-                </div>
-
-            </div>
-        </li>
-
-
-        <li class="item-b">
-            <div class="box">
-
-                <div class="slide-img">
-                    <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/10.jpg" alt="">
-                    <div class="overlay">
-                        <a href="#" class="buy-btn"> Ija Echri</a>
-                    </div>
-                </div>
-
-                <div class="detail-box">
-                    <div class="type">
-                        <a href="">XXXX XXXXX</a>
-                        <span>YYYYY</span>
-                    </div>
-                    <a href="#" class="price">23$</a>
-
-                </div>
-
-            </div>
-        </li>
-
-        <li class="item-c">
-            <div class="box">
-
-                <div class="slide-img">
-                    <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/7.jpg" alt="">
-                    <div class="overlay">
-                        <a href="#" class="buy-btn"> Ija Echri</a>
-                    </div>
-                </div>
-
-                <div class="detail-box">
-                    <div class="type">
-                        <a href="">XXXX XXXXX</a>
-                        <span>YYYYY</span>
-                    </div>
-                    <a href="#" class="price">23$</a>
 
                 </div>
+            </li>
+            <li class="item-a">
+                <div class="box">
 
-            </div>
-        </li>
-
-        <li class="item-d">
-            <div class="box">
-
-                <div class="slide-img">
-                    <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/15.jpg" alt="">
-                    <div class="overlay">
-                        <a href="#" class="buy-btn"> Ija Echri</a>
+                    <div class="slide-img">
+                        <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/11.jpg" alt="">
+                        <div class="overlay">
+                            <a href="#" class="buy-btn"> Ija Echri</a>
+                        </div>
                     </div>
-                </div>
 
-                <div class="detail-box">
-                    <div class="type">
-                        <a href="">XXXX XXXXX</a>
-                        <span>YYYYY</span>
+                    <div class="detail-box">
+                        <div class="type">
+                            <a href="">
+                            <script>
+                                document.write(dabchy[5].category);
+                                
+                            </script>
+                            </a>
+                            <script>
+                                document.write(dabchy[5].name);
+                                
+                            </script>
+                            </a>
+                            <span>
+                                <script> 
+                                document.write(dabchy[5].size);
+                                </script>
+                                <script> 
+                                document.write(dabchy[5].color);
+                                </script>
+                            </span>
+                        </div>
+                        <a href="#" class="price">
+                            <script> 
+                                document.write(dabchy[5].price);
+                                </script>
+                                TND
+                        </a>
+
                     </div>
-                    <a href="#" class="price">23$</a>
 
                 </div>
+            </li>
 
-            </div>
-        </li>
-        <li class="item-e">
-            <div class="box">
 
-                <div class="slide-img">
-                    <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/8.jpg" alt="">
-                    <div class="overlay">
-                        <a href="#" class="buy-btn"> Ija Echri</a>
+            <li class="item-b">
+                <div class="box">
+
+                    <div class="slide-img">
+                        <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/10.jpg" alt="">
+                        <div class="overlay">
+                            <a href="#" class="buy-btn"> Ija Echri</a>
+                        </div>
                     </div>
-                </div>
 
-                <div class="detail-box">
-                    <div class="type">
-                        <a href="">XXXX XXXXX</a>
-                        <span>YYYYY</span>
+                    <div class="detail-box">
+                        <div class="type">
+                            <a href="">
+                            <script>
+                                document.write(dabchy[1].category);
+                                
+                            </script>
+                            </a>
+                            <script>
+                                document.write(dabchy[1].name);
+                                
+                            </script>
+                            </a>
+                            <span>
+                                <script> 
+                                document.write(dabchy[1].size);
+                                </script>
+                                <script> 
+                                document.write(dabchy[1].color);
+                                </script>
+                            </span>
+                        </div>
+                        <a href="#" class="price">
+                            <script> 
+                                document.write(dabchy[1].price);
+                                </script>
+                                TND
+                        </a>
+
                     </div>
-                    <a href="#" class="price">23$</a>
 
                 </div>
+            </li>
+            <li class="item-b">
+                <div class="box">
 
-            </div>
-        </li>
+                    <div class="slide-img">
+                        <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/10.jpg" alt="">
+                        <div class="overlay">
+                            <a href="#" class="buy-btn"> Ija Echri</a>
+                        </div>
+                    </div>
 
-    </ul>
+                    <div class="detail-box">
+                        <div class="type">
+                            <a href="">
+                            <script>
+                                document.write(dabchy[6].category);
+                                
+                            </script>
+                            </a>
+                            <script>
+                                document.write(dabchy[6].name);
+                                
+                            </script>
+                            </a>
+                            <span>
+                                <script> 
+                                document.write(dabchy[6].size);
+                                </script>
+                                <script> 
+                                document.write(dabchy[6].color);
+                                </script>
+                            </span>
+                        </div>
+                        <a href="#" class="price">
+                            <script> 
+                                document.write(dabchy[6].price);
+                                </script>
+                                TND
+                        </a>
 
+                    </div>
 
+                </div>
+            </li>
+
+            <li class="item-c">
+                <div class="box">
+
+                    <div class="slide-img">
+                        <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/7.jpg" alt="">
+                        <div class="overlay">
+                            <a href="#" class="buy-btn"> Ija Echri</a>
+                        </div>
+                    </div>
+
+                    <div class="detail-box">
+                        <div class="type">
+                            <a href="">
+                            <script>
+                                document.write(dabchy[2].category);
+                                
+                            </script>
+                            </a>
+                            <script>
+                                document.write(dabchy[2].name);
+                                
+                            </script>
+                            </a>
+                            <span>
+                                <script> 
+                                document.write(dabchy[2].size);
+                                </script>
+                                <script> 
+                                document.write(dabchy[2].color);
+                                </script>
+                            </span>
+                        </div>
+                        <a href="#" class="price">
+                            <script> 
+                                document.write(dabchy[2].price);
+                                </script>
+                                TND
+                        </a>
+
+                    </div>
+
+                </div>
+            </li>
+            <li class="item-c">
+                <div class="box">
+
+                    <div class="slide-img">
+                        <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/7.jpg" alt="">
+                        <div class="overlay">
+                            <a href="#" class="buy-btn"> Ija Echri</a>
+                        </div>
+                    </div>
+
+                    <div class="detail-box">
+                        <div class="type">
+                            <a href="">
+                            <script>
+                                document.write(dabchy[7].category);
+                                
+                            </script>
+                            </a>
+                            <script>
+                                document.write(dabchy[7].name);
+                                
+                            </script>
+                            </a>
+                            <span>
+                                <script> 
+                                document.write(dabchy[7].size);
+                                </script>
+                                <script> 
+                                document.write(dabchy[7].color);
+                                </script>
+                            </span>
+                        </div>
+                        <a href="#" class="price">
+                            <script> 
+                                document.write(dabchy[7].price);
+                                </script>
+                                TND
+                        </a>
+
+                    </div>
+
+                </div>
+            </li>
+
+            <li class="item-d">
+                <div class="box">
+
+                    <div class="slide-img">
+                        <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/15.jpg" alt="">
+                        <div class="overlay">
+                            <a href="#" class="buy-btn"> Ija Echri</a>
+                        </div>
+                    </div>
+
+                    <div class="detail-box">
+                        <div class="type">
+                            <a href="">
+                            <script>
+                                document.write(dabchy[3].category);
+                                
+                            </script>
+                            </a>
+                            <script>
+                                document.write(dabchy[3].name);
+                                
+                            </script>
+                            </a>
+                            <span>
+                                <script> 
+                                document.write(dabchy[3].size);
+                                </script>
+                                <script> 
+                                document.write(dabchy[3].color);
+                                </script>
+                            </span>
+                        </div>
+                        <a href="#" class="price">
+                            <script> 
+                                document.write(dabchy[3].price);
+                                </script>
+                                TND
+                        </a>
+
+                    </div>
+
+                </div>
+            </li>
+            <li class="item-d">
+                <div class="box">
+
+                    <div class="slide-img">
+                        <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/15.jpg" alt="">
+                        <div class="overlay">
+                            <a href="#" class="buy-btn"> Ija Echri</a>
+                        </div>
+                    </div>
+
+                    <div class="detail-box">
+                        <div class="type">
+                            <a href="">
+                            <script>
+                                document.write(dabchy[8].category);
+                                
+                            </script>
+                            </a>
+                            <script>
+                                document.write(dabchy[8].name);
+                                
+                            </script>
+                            </a>
+                            <span>
+                                <script> 
+                                document.write(dabchy[8].size);
+                                </script>
+                                <script> 
+                                document.write(dabchy[8].color);
+                                </script>
+                            </span>
+                        </div>
+                        <a href="#" class="price">
+                            <script> 
+                                document.write(dabchy[8].price);
+                                </script>
+                                TND
+                        </a>
+
+                    </div>
+
+                </div>
+            </li>
+            <li class="item-e">
+                <div class="box">
+
+                    <div class="slide-img">
+                        <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/8.jpg" alt="">
+                        <div class="overlay">
+                            <a href="#" class="buy-btn"> Ija Echri</a>
+                        </div>
+                    </div>
+
+                    <div class="detail-box">
+                        <div class="type">
+                            <a href="">
+                            <script>
+                                document.write(dabchy[4].category);
+                                
+                            </script>
+                            </a>
+                            <script>
+                                document.write(dabchy[4].name);
+                                
+                            </script>
+                            </a>
+                            <span>
+                                <script> 
+                                document.write(dabchy[4].size);
+                                </script>
+                                <script> 
+                                document.write(dabchy[4].color);
+                                </script>
+                            </span>
+                        </div>
+                        <a href="#" class="price">
+                            <script> 
+                                document.write(dabchy[4].price);
+                                </script>
+                                TND
+                        </a>
+
+                    </div>
+
+                </div>
+            </li>
+            <li class="item-e">
+                <div class="box">
+
+                    <div class="slide-img">
+                        <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/8.jpg" alt="">
+                        <div class="overlay">
+                            <a href="#" class="buy-btn"> Ija Echri</a>
+                        </div>
+                    </div>
+
+                    <div class="detail-box">
+                        <div class="type">
+                            <a href="">
+                            <script>
+                                document.write(dabchy[9].category);
+                                
+                            </script>
+                            </a>
+                            <script>
+                                document.write(dabchy[9].name);
+                                
+                            </script>
+                            </a>
+                            <span>
+                                <script> 
+                                document.write(dabchy[9].size);
+                                </script>
+                                <script> 
+                                document.write(dabchy[9].color);
+                                </script>
+                            </span>
+                        </div>
+                        <a href="#" class="price">
+                            <script> 
+                                document.write(dabchy[9].price);
+                                </script>
+                                TND
+                        </a>
+
+                    </div>
+
+                </div>
+            </li>
+
+        </ul>
+
+    </section>
 
 
 
