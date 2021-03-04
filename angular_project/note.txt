@@ -1,0 +1,19 @@
+node js 
+invite de commande npm
+n7elou el terminale CMD w nssobou el angular
+cli = commande line interface invite de commande t5alina ne5dmou bel angular 
+
+pour faire des nvx projets 
+
+ng new nameof project 
+
+
+routing ? 
+
+
+cd hello world =  pour acceder a le projet 
+
+
+
+
+ng serve -o = t5adem el projet w tassna3lou  serveur local 
