@@ -17,3 +17,47 @@ cd hello world =  pour acceder a le projet
 
 
 ng serve -o = t5adem el projet w tassna3lou  serveur local 
+
+
+package.json 
+
+nal9aw fih les librairie 
+
+
+node moduels 
+
+fi folders el 5assin bel package.json 
+
+src 
+
+
+how el folder eli mawjoud fih source file mta3 el projey
+
+
+--> app : moukawnet les principale compoument moduels routing
+-----> 6 files 
+
+4 app component
+
+app modules : declartion wel importes 
+app.component.ts :
+
+selector : 3ardh el comp fi file html e5er 
+tempurl : code html mta3 el projet 
+styleurls  CSS file project
+
+
+--> assets multimedia files
+
+--> index html fihcier html principale
+app-root 
+
+--> style css
+
+
+
+
+components chnya how mokawneet el site 
+
+
+ 
