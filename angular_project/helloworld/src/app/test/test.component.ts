@@ -7,7 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TestComponent implements OnInit {
   name="Dabchouch";
-  image="./../../assets/icone.png"
+  image="./../../assets/icone.png";
+
+  bookList = ["from 0 to hero", "The subtil art of not givin a fuck", "web trainig", ];
+
+
+
+
   constructor() { }
 
   ngOnInit(): void {
