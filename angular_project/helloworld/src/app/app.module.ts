@@ -9,6 +9,7 @@ import { RegisterComponent } from './register/register.component';
 import { AddToCartComponent } from './add-to-cart/add-to-cart.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { TestComponent } from './test/test.component';
+import { Page404Component } from './page404/page404.component';
 
 
 @NgModule({
@@ -20,6 +21,7 @@ import { TestComponent } from './test/test.component';
     AddToCartComponent,
     NavbarComponent,
     TestComponent,
+    Page404Component,
    
   ],
   imports: [

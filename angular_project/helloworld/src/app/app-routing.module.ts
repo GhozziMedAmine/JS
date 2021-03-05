@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AddToCartComponent } from './add-to-cart/add-to-cart.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
+import { Page404Component } from './page404/page404.component';
 import { RegisterComponent } from './register/register.component';
 import { TestComponent } from './test/test.component';
 
@@ -26,7 +27,11 @@ const routes: Routes = [
   {
     path:'test',
     component:TestComponent
-  }
+  },
+  {
+    path:'**',
+    component:Page404Component
+  },
 ];
 
 @NgModule({
