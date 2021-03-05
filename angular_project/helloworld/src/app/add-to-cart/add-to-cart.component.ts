@@ -7,9 +7,38 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AddToCartComponent implements OnInit {
 
+  peopleList = [
+    {
+      id: 1,
+      name: "MedAmine",
+      username: "ghozzi",
+      phone: "00 22 798 101",
+    },
+    {
+      id: 2,
+      name: "Ayoub",
+      username: "ghozzi",
+      phone: "00 22 798 101",
+    },
+    {
+      id: 3,
+      name: "yosr",
+      username: "ghozzi",
+      phone: "00 22 798 101",
+    },
+
+
+  ]
+
+
   constructor() { }
 
   ngOnInit(): void {
   }
-
+/*
+  delete(person) {
+    let index = this.peopleList.indexOf(person);
+    this.peopleList.splice(index, 1);
+  }
+*/
 }

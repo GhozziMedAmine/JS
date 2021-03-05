@@ -1,5 +1,43 @@
-<p>add-to-cart works!</p>
-<div class="error-actions">
-    <a [routerLink]="['']" class="btn btn-success btn-lg"><span class="glyphicon glyphicon-home"></span>
-        Take Me Home </a>
+<app-navbar></app-navbar>
+
+
+<div class="container my-5">
+
+    <div class="row">
+        <div class="col">
+            <h1>Add to cart</h1>
+            <button class="btn btn-primary my-3">Add</button>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <div *ngIf="peopleList.length == 0" class="alert alert-warning">No people found</div>
+            <table *ngIf="peopleList.length > 0" class="table">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Firstname</th>
+                        <th>Lastname</th>
+                        <th>Phone</th>
+                        <th>#</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let person of peopleList ; let i = index">
+                        <th>{{ i }}</th>
+                        <td>{{ person.name }}</td>
+                        <td>{{ person.username }}</td>
+                        <td>{{ person.phone }}</td>
+                        <td>
+                            <button class="btn btn-info">Details</button>
+                            <!-- (click)="delete(person)"-->
+                            <button class="btn btn-danger mx-3">Delete</button>
+                            <button class="btn btn-warning" >Update</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
 </div>
