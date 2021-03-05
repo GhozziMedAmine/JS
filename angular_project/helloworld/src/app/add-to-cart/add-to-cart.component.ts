@@ -35,10 +35,10 @@ export class AddToCartComponent implements OnInit {
 
   ngOnInit(): void {
   }
-/*
-  delete(person) {
+
+  delete(person:any) {
     let index = this.peopleList.indexOf(person);
     this.peopleList.splice(index, 1);
   }
-*/
+
 }
