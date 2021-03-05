@@ -8,6 +8,7 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { AddToCartComponent } from './add-to-cart/add-to-cart.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { TestComponent } from './test/test.component';
 
 
 @NgModule({
@@ -18,6 +19,7 @@ import { NavbarComponent } from './navbar/navbar.component';
     RegisterComponent,
     AddToCartComponent,
     NavbarComponent,
+    TestComponent,
    
   ],
   imports: [

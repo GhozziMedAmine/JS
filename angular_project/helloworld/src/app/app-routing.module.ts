@@ -4,6 +4,7 @@ import { AddToCartComponent } from './add-to-cart/add-to-cart.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
+import { TestComponent } from './test/test.component';
 
 const routes: Routes = [
   {
@@ -22,6 +23,10 @@ const routes: Routes = [
     path:'add-to-cart',
     component:AddToCartComponent
   },
+  {
+    path:'test',
+    component:TestComponent
+  }
 ];
 
 @NgModule({
