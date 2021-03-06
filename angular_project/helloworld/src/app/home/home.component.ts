@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+declare var ExternalJSFileFunction:any; 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -106,7 +107,12 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  CallExternalJSFileFunction(){
+    ExternalJSFileFunction()
+  }
 
+
+/*
   affiche(){
     let carts = document.querySelectorAll('.add-cart');
 
@@ -115,12 +121,13 @@ export class HomeComponent implements OnInit {
       carts[i].addEventListener('click',() => {
         
         console.log("add to dabchy cart ") ;
+        
       
       })
       
       
     }
-    
-  }
 
+  }
+*/ 
 }
