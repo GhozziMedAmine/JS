@@ -112,7 +112,13 @@ export class HomeComponent implements OnInit {
 
     for(let i=0; i < carts.length; i++)
     {
-      console.log("hello dabchy"+i) ;
+      carts[i].addEventListener('click',() => {
+        
+        console.log("add to dabchy cart ") ;
+      
+      })
+      
+      
     }
     
   }
