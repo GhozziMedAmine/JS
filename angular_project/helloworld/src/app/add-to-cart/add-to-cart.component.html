@@ -1,7 +1,7 @@
 <app-navbar></app-navbar>
 
 <main class="my-5  ">
-
+    <div *ngIf="products.length == 0" class="alert alert-warning">No product added</div>
 
     <div class="container">
         <table id="cart" class="table table-hover table-condensed">
@@ -22,47 +22,55 @@
 
 
             <tbody>
-                <tr>
-                   <!--col du produit image et discription -->
+
+                <tr *ngFor="let product of products">
+                    <!--col du produit image et discription -->
 
                     <td data-th="Product">
                         <div class="row">
                             <div class="col-sm-2 hidden-xs">
-                                <img src="http://placehold.it/100x100" alt="..." class="img-responsive" />
+                                <img src="{{product.image}}" alt="..." class="img-responsive" width="100px"
+                                    height="100px" />
+
                             </div>
 
                             <div class="col-sm-10">
-                                <h4 class="nomargin">Product 1</h4>
+                                <h4 class="nomargin">{{product.name}}</h4>
 
-                                <p>Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                                    nulla pariatur. Lorem ipsum dolor sit amet.
-                                </p>
 
                             </div>
                         </div>
                     </td>
                     <!--col du prix-->
 
-                    <td data-th="Price">$1.99</td>
+                    <td data-th="Price">$ {{product.price}} </td>
 
-                    <!--col quantity-->
+                    <!--col quantity {{product.qte}}-->
 
                     <td data-th="Quantity">
-                        <input type="number" class="form-control text-center" value="1">
-                    </td>
-                   
-                    <!--col somme-->
-                   
-                    <td data-th="Subtotal" class="text-center">
-                        1.99
-                    </td>
-                   
-                   <!--col Delete-->
+                        <input class="form-control text-center" value="{{allQte(product)}}" min="1">
 
+
+                    </td>
+
+
+
+
+
+
+                    <!--col somme-->
+
+                    <td data-th="Subtotal" class="text-center">
+                        <input class="form-control text-center" value=" $  {{ Subtotal(product)  | number : '1.2-2'}} " min="1">
+                      
+                    </td>
+
+                    <!--col Delete-->
+                    <td> <button class="btn btn-success " (click)="add(product)" >Add</button ></td>
                     <td class="actions" data-th="">
-                   
-                        <button class="btn btn-danger mx-3">Delete</button>
-                   
+
+                        <button class="btn btn-danger mx-3" (click)="delete(product)">Delete</button>
+
                     </td>
                 </tr>
             </tbody>
@@ -78,7 +86,7 @@
                         <a href="#" class="btn btn-warning"> Continue Shopping</a>
                     </td>
                     <td colspan="2" class="hidden-xs"></td>
-                    <td class="hidden-xs text-center"><strong>Total $1.99</strong></td>
+                    <td class="hidden-xs text-center"><strong>Total $ {{total() | number : '1.2-2'}}</strong></td>
                     <td>
                         <a href="#" class="btn btn-success btn-block">Checkout</a>
                     </td>
@@ -95,49 +103,3 @@
 </main>
 
 <app-footer></app-footer>
-
-<!-- 
-<main class="my-5  ">
-  <div class="container  ">
-
-    <div class="row">
-        <div class="col">
-            <h1>Add to cart</h1>
-            <button class="btn btn-primary my-3">Add</button>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col">
-            <div *ngIf="peopleList.length == 0" class="alert alert-warning">No people found</div>
-            <table *ngIf="peopleList.length > 0" class="table">
-                <thead>
-                    <tr>
-                        <th>#</th>
-                        <th>Firstname</th>
-                        <th>Lastname</th>
-                        <th>Phone</th>
-                        <th>#</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr *ngFor="let person of peopleList ; let i = index">
-                        <th>{{ i }}</th>
-                        <td>{{ person.name }}</td>
-                        <td>{{ person.username }}</td>
-                        <td>{{ person.phone }}</td>
-                        <td>
-                            <button class="btn btn-info">Details</button>
-                            
-                            <button class="btn btn-danger mx-3"(click)="delete(person)">Delete</button>
-                            <button class="btn btn-warning" >Update</button>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
-</div>  
-</main>
-
--->

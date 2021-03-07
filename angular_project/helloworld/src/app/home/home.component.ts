@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-declare var ExternalJSFileFunction:any; 
+declare var cartNumbers: any;
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -107,27 +107,42 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  CallExternalJSFileFunction(){
-    ExternalJSFileFunction()
-  }
 
+  addToCart(dbach: any) {
 
-/*
-  affiche(){
-    let carts = document.querySelectorAll('.add-cart');
+    let cart: any[] = []
 
-    for(let i=0; i < carts.length; i++)
-    {
-      carts[i].addEventListener('click',() => {
-        
-        console.log("add to dabchy cart ") ;
-        
-      
-      })
-      
-      
+    if (!JSON.parse(localStorage.getItem('cart') as string)) {
+      let product = { id: dbach.id, name: dbach.name, price: dbach.price, image : dbach.image , qte: 1  }
+      cart.push(product)
+    }
+    else {
+      cart = JSON.parse(localStorage.getItem('cart') as string)
+
+      let trouve: boolean = false
+      let indice = -1
+
+      for (let i = 0; i < cart.length; i++) {
+        if (cart[i].id == dbach.id) {
+          trouve = true
+          indice = i
+          break
+        }
+      }
+
+      if (trouve) {
+        cart[indice].qte++
+      }
+      else {
+        let product = { id: dbach.id, name: dbach.name, price: dbach.price, image : dbach.image  , qte: 1 }
+        cart.push(product)
+      }
+
     }
 
+    localStorage.setItem('cart', JSON.stringify(cart))
+
+
   }
-*/ 
+
 }
